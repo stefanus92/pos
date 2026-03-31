@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cashier</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="inner">
+      <div class="brand">RestoFlow</div>
+      <nav class="nav"><a href="index.html" class="">Overview</a> <a href="customer-order.html" class="">Customer Order</a> <a href="cashier.html" class="active">Cashier</a> <a href="kitchen.html" class="">Kitchen</a> <a href="admin.html" class="">Admin</a></nav>
+    </div>
+  </div>
+  <div class="container">
+<div class="grid grid-2">
+  <div class="card">
+    <div class="row wrap">
+      <div><h2 style="margin:0">Cashier Confirmation</h2><div class="small">Search order, confirm payment, assign table or pickup number</div></div>
+      <span class="badge blue">Counter flow</span>
+    </div>
+    <div class="row wrap" style="margin-top:18px">
+      <input class="search" style="max-width:320px" value="ORD-1050" />
+      <button class="btn primary">Search Order</button>
+      <button class="btn">Scan QR / Code</button>
+    </div>
+    <div class="panel" style="margin-top:18px">
+      <div class="row"><h3 style="margin:0">Order detail</h3><span class="badge amber">Pending Payment</span></div>
+      <div class="grid grid-2" style="margin-top:16px">
+        <div>
+          <div class="small">Order Number</div>
+          <div style="font-size:28px;font-weight:800;margin-top:6px">ORD-1050</div>
+          <div class="small" style="margin-top:14px">Order Type</div>
+          <span class="badge blue" style="margin-top:8px">Dine In</span>
+          <div class="cart-item" style="margin-top:16px">
+            <div class="row"><strong>Flat White</strong><strong>AUD 6.30</strong></div>
+            <div class="small">Regular • Oat Milk • Vanilla Syrup</div>
+            <div class="small">Extra hot please</div>
+          </div>
+        </div>
+        <div>
+          <div class="small">Payment Method</div>
+          <div class="row" style="margin-top:10px">
+            <button class="btn primary" style="flex:1">Tap / Card</button>
+            <button class="btn" style="flex:1">Cash</button>
+          </div>
+          <div class="small" style="margin-top:18px">Assign after payment</div>
+          <div class="row" style="margin-top:10px">
+            <button class="chip active">Assign Table</button>
+            <button class="chip">Pickup Number</button>
+          </div>
+          <div class="row" style="margin-top:14px">
+            <select class="search"><option>Table A3</option><option>Table A1</option><option>Table B1</option></select>
+            <input class="search" placeholder="P-29" />
+          </div>
+          <div class="row" style="margin-top:18px">
+            <button class="btn">Cancel</button>
+            <button class="btn primary">Mark Paid & Send to Kitchen</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <h2 style="margin:0 0 14px">Live Orders</h2>
+    <div class="order-list">
+      <div class="item"><div class="row"><div><div class="small">ORD-1048</div><strong>Dine In</strong></div><span class="badge green">Paid</span></div><div class="small" style="margin-top:8px">Table A3 • Flat White</div></div>
+      <div class="item"><div class="row"><div><div class="small">ORD-1049</div><strong>Takeaway</strong></div><span class="badge green">Ready</span></div><div class="small" style="margin-top:8px">Pickup P-29 • 2x Cappuccino</div></div>
+      <div class="item"><div class="row"><div><div class="small">ORD-1050</div><strong>Dine In</strong></div><span class="badge amber">Pending</span></div><div class="small" style="margin-top:8px">Awaiting table • Mocha</div></div>
+    </div>
+  </div>
+</div>
+</div>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

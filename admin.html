@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="inner">
+      <div class="brand">RestoFlow</div>
+      <nav class="nav"><a href="index.html" class="">Overview</a> <a href="customer-order.html" class="">Customer Order</a> <a href="cashier.html" class="">Cashier</a> <a href="kitchen.html" class="">Kitchen</a> <a href="admin.html" class="active">Admin</a></nav>
+    </div>
+  </div>
+  <div class="container">
+<div class="grid grid-4">
+  <div class="kpi"><div class="label">Revenue</div><div class="value">AUD 1,860</div><div class="small">Today</div></div>
+  <div class="kpi"><div class="label">Transactions</div><div class="value">146</div><div class="small">Today</div></div>
+  <div class="kpi"><div class="label">Pending Payment</div><div class="value">9</div><div class="small">Phone orders</div></div>
+  <div class="kpi"><div class="label">Ready Orders</div><div class="value">6</div><div class="small">Kitchen output</div></div>
+</div>
+<div class="grid grid-2" style="margin-top:18px">
+  <div class="card">
+    <h2 style="margin:0 0 14px">Backoffice Modules</h2>
+    <table class="table">
+      <thead><tr><th>Module</th><th>Description</th></tr></thead>
+      <tbody>
+        <tr><td>Menu Management</td><td>Items, categories, prices, images</td></tr>
+        <tr><td>Modifier Groups</td><td>Size, milk, extras, rules</td></tr>
+        <tr><td>Orders</td><td>Payment and fulfillment tracking</td></tr>
+        <tr><td>Transactions</td><td>Cash, tap/card, refunds</td></tr>
+        <tr><td>Users & Roles</td><td>Admin, cashier, kitchen</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="card">
+    <h2 style="margin:0 0 14px">Architecture Note</h2>
+    <div class="notice">Customer ordering should stay custom and mobile-first. AdminLTE is better for the admin/backoffice area, reports, settings, and transaction monitoring.</div>
+  </div>
+</div>
+</div>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

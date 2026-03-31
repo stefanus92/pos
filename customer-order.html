@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Customer Order</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="inner">
+      <div class="brand">RestoFlow</div>
+      <nav class="nav"><a href="index.html" class="">Overview</a> <a href="customer-order.html" class="active">Customer Order</a> <a href="cashier.html" class="">Cashier</a> <a href="kitchen.html" class="">Kitchen</a> <a href="admin.html" class="">Admin</a></nav>
+    </div>
+  </div>
+  <div class="container">
+<div class="grid grid-3">
+  <section>
+    <div class="card">
+      <div class="row wrap">
+        <div>
+          <div class="small">Order type</div>
+          <div style="display:flex;gap:10px;margin-top:8px">
+            <button class="chip active">Dine In</button>
+            <button class="chip">Takeaway</button>
+          </div>
+        </div>
+        <div style="flex:1;min-width:260px">
+          <input class="search" placeholder="Search drinks or food..." />
+        </div>
+      </div>
+      <div class="categories" style="margin-top:16px">
+        <button class="cat active">Coffee</button>
+        <button class="cat">Tea</button>
+        <button class="cat">Bakery</button>
+        <button class="cat">Cold Drinks</button>
+      </div>
+      <div class="row" style="margin-top:18px"><h2 style="margin:0">Choose your item</h2><span class="badge blue">Tap a tile</span></div>
+      <div class="menu-grid" style="margin-top:14px">
+        <div class="menu-card" style="outline:2px solid #111827">
+          <div class="menu-img">Flat White</div>
+          <div class="menu-body"><div><div class="product-name">Flat White</div><div class="small">Most popular</div></div><div><strong>AUD 4.50</strong></div></div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-img">Cappuccino</div>
+          <div class="menu-body"><div><div class="product-name">Cappuccino</div><div class="small">Classic</div></div><div><strong>AUD 4.50</strong></div></div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-img">Mocha</div>
+          <div class="menu-body"><div><div class="product-name">Mocha</div><div class="small">Chocolate coffee</div></div><div><strong>AUD 5.20</strong></div></div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-img">Latte</div>
+          <div class="menu-body"><div><div class="product-name">Latte</div><div class="small">Smooth</div></div><div><strong>AUD 5.00</strong></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="panel">
+      <div class="row"><h2 style="margin:0">Customise</h2><span class="badge">Flat White</span></div>
+      <div style="margin-top:16px">
+        <div class="small" style="margin-bottom:10px">Choose size</div>
+        <div class="options three">
+          <button class="opt">Small</button>
+          <button class="opt active">Regular</button>
+          <button class="opt">Large</button>
+        </div>
+      </div>
+      <div style="margin-top:18px">
+        <div class="small" style="margin-bottom:10px">Choose milk</div>
+        <div class="options two">
+          <button class="opt">Full Cream</button>
+          <button class="opt active">Oat Milk</button>
+          <button class="opt">Almond Milk</button>
+          <button class="opt">Soy Milk</button>
+        </div>
+      </div>
+      <div style="margin-top:18px">
+        <div class="small" style="margin-bottom:10px">Extras</div>
+        <div class="options two">
+          <button class="opt active">Vanilla Syrup</button>
+          <button class="opt">Extra Shot</button>
+        </div>
+      </div>
+      <div style="margin-top:18px">
+        <div class="small" style="margin-bottom:10px">Special note</div>
+        <textarea class="note">Extra hot please</textarea>
+      </div>
+      <div class="row" style="margin-top:18px">
+        <button class="btn">Back</button>
+        <button class="btn primary">Add to Order</button>
+      </div>
+    </div>
+  </section>
+
+  <aside class="desktop-cart">
+    <div class="cart">
+      <div class="row"><h2 style="margin:0">Your Order</h2><span class="badge blue">Dine In</span></div>
+      <div class="cart-item">
+        <div class="row"><strong>Flat White</strong><strong>AUD 6.30</strong></div>
+        <div class="small">Regular • Oat Milk • Vanilla Syrup</div>
+        <div class="small">Extra hot please</div>
+      </div>
+      <div class="summary">
+        <div class="line"><span>Subtotal</span><span>AUD 6.30</span></div>
+        <div class="line"><span>Service</span><span>AUD 0.00</span></div>
+        <div class="total"><span>Total</span><span>AUD 6.30</span></div>
+      </div>
+      <button class="btn primary" style="width:100%;margin-top:14px">Proceed to Cashier</button>
+      <div class="notice" style="margin-top:12px">After submitting, the customer pays at the cashier and receives a table number or pickup number.</div>
+    </div>
+  </aside>
+</div>
+<div class="mobilebar">
+  <div><div style="font-weight:800">1 item • AUD 6.30</div><div class="small" style="color:#cbd5e1">Proceed to cashier</div></div>
+  <button class="mobilebtn">View Order</button>
+</div>
+</div>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

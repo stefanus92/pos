@@ -1,0 +1,1 @@
+Open index.html in your browser. This ZIP contains full HTML pages with real content.
